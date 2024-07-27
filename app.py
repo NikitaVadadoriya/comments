@@ -7,7 +7,7 @@ import json
 app = Flask(__name__)
 CORS(app)
 genai.configure(api_key='AIzaSyAO2ohK36Fc-DV_Ryi1q1CU-aFxQmoA0tw')
-DATABASE = 'custom_options.db'
+DATABASE = 'custom_option.db'
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
